@@ -1,67 +1,62 @@
-# Cepa — cozinha de estação
+# Cepa | Cozinha de estação em Pinheiros
 
-One-page editorial em português do Brasil. Projeto novo: a pasta inicial não continha código, assets ou identidade oficial. Implementação estática em HTML, CSS e JavaScript, sem instalação ou build.
+Página editorial em português do Brasil, refinada sobre a implementação existente. HTML, CSS e JavaScript estáticos, sem instalação ou build.
 
-## Direção
+## Mantido e refinado
 
-Ingrediente, técnica e tempo. Marfim quente, carvão, vinho terroso e oliva; Cormorant Garamond e Manrope hospedadas localmente sob SIL Open Font License. O lettering `cepa.` e o favicon são propostas tipográficas provisórias, não reproduções da marca oficial.
+Preservados: paleta marfim, carvão, vinho e oliva; tipografia Cormorant Garamond e Manrope, com fontes e licenças SIL OFL locais; sequência editorial e caminho até a reserva pelo WhatsApp. Um clique não confirma a reserva: a equipe confirma diretamente com o cliente.
 
-As nove seções cobrem hero, casa, filosofia, experiência, sala e vinho, espaço, reconhecimento, informações práticas e convite final. Os botões abrem uma conversa com a casa; nenhum clique confirma uma reserva.
+Copy mais direta, sem travessões ou frases de manifesto. O hero apresenta cozinha de estação e localização. Removidos um bloco repetido de vinho, o segundo cartão de pratos, a frase decorativa sobre a estação e os três blocos redundantes do espaço. A composição da mesa agora combina uma imagem e uma orientação prática sobre o cardápio.
+
+Seis imagens geradas substituem os placeholders. São ilustrações fotográficas para apresentação do projeto, não fotografias oficiais dos pratos, equipe ou arquitetura do Cepa. Há identificação no rodapé e nos textos alternativos. O lettering `cepa` e o favicon continuam propostas tipográficas provisórias.
 
 ## Abrir localmente
 
-Com Python instalado, execute na raiz do projeto:
+Na raiz do projeto, com Python instalado:
 
 ```sh
 python -m http.server 4173 --directory dist
 ```
 
-Acesse `http://localhost:4173`. Sem servidor, `dist/index.html` também pode ser aberto diretamente no navegador. O site não usa backend, cookies, rastreadores ou bibliotecas de interface.
+Acesse `http://localhost:4173`. Conteúdo e imagens também aparecem ao abrir `dist/index.html` diretamente, inclusive sem JavaScript. Sem backend, cookies, rastreadores ou bibliotecas de interface.
 
-## Arquivos
+## Arquivos editados e adicionados no refinamento
 
-| Arquivo | Função |
+| Arquivo | Alteração |
 |---|---|
-| `dist/index.html` | Copy final, nove seções, links, SEO, favicon e dados estruturados Restaurant |
-| `dist/styles.css` | Tokens, composição, tipografia, responsividade e movimento reduzido |
-| `dist/assets.js` | Cadastro de imagens oficiais, descrições e pontos de recorte |
-| `dist/main.js` | Menu acessível, carregamento de imagens e revelações leves |
-| `dist/fonts/` | Três fontes WOFF2 e duas licenças SIL OFL |
-| `dist/images/README.md` | Orientação para fornecimento das fotografias |
-| `.openai/hosting.json` | Identidade e diretório estático da publicação Sites |
-| `.gitignore` | Exclusão de arquivos locais e segredos |
-| `AUTOCRITICA.md` | Avaliação estratégica e prioridades futuras |
+| `dist/index.html` | Copy final revisada, seções compactadas, imagens responsivas, SEO e JSON-LD |
+| `dist/styles.css` | Composição da mesa, limites de texto e identificação das imagens |
+| `dist/main.js` | Reutiliza imagens do HTML, mantendo menu e movimento reduzido |
+| `dist/assets.js` | Cadastro das seis imagens, srcset, descrições e recortes |
+| `dist/images/*.webp` | Seis imagens em duas resoluções, 12 arquivos |
+| `dist/images/README.md` | Origem e substituição dos assets |
+| `dist/og-cepa.jpg` | Cartão social de 1200 × 630 px |
+| `dist/favicon.svg` | Ícone tipográfico local |
+| `PROMPTS-IMAGENS.md` | Prompts completos das sete imagens geradas |
+| `README.md` e `AUTOCRITICA.md` | Operação, validação, avaliação e prioridades |
 
-## Substituir as fotografias
+## Imagens e performance
 
-Foram usados placeholders identificados, como solicitado. Não foram coletadas imagens do Instagram, utilizadas fotografias de terceiros ou geradas imagens apresentadas como reais.
+WebP e srcset selecionam a resolução conforme a tela. O hero é prioritário; as demais imagens usam lazy loading e decodificação assíncrona. Width, height e aspect-ratio reservam espaço antes do carregamento. Os PNGs grandes não entram na publicação. Prompts completos e limitações estão em `PROMPTS-IMAGENS.md`.
 
-Salve as fotografias em `dist/images/` e preencha o respectivo registro em `dist/assets.js`:
+Ao receber fotografias oficiais, salvar em `dist/images/` e atualizar src, srcset, sizes, alt, dimensões e recortes em `dist/assets.js` e no img correspondente de `dist/index.html`, preservando a experiência sem JavaScript. Manter a identificação ilustrativa enquanto algum asset gerado permanecer, incluindo o cartão social.
 
-```js
-'hero-space-or-signature-dish': {
-  src: 'images/hero-space-or-signature-dish.webp',
-  alt: 'Descrição fiel da fotografia fornecida',
-  position: '50% 50%'
-}
-```
+## SEO e compartilhamento
 
-`src` e `alt` devem estar preenchidos. Imagens ausentes ou com erro preservam o placeholder. O hero é carregado com prioridade; as demais imagens usam lazy loading e decodificação assíncrona. Os recortes mantêm proporções estáveis.
-
-Slots: `hero-space-or-signature-dish`, `chef-or-kitchen-detail`, `ingredient-or-process-texture`, `dish-detail-01`, `dish-detail-02`, `wine-or-service-detail`, `terrace-or-counter-seating`.
-
-Priorize o ambiente ou prato no hero, Gabrielli/serviço/vinho e terraço/balcão. Recomenda-se WebP/AVIF, largura de 1200–1600 px e aproximadamente 100–250 KB conforme o detalhe. A excelência sensorial depende dessas fotografias.
+Título, descrição, canonical, Open Graph, Twitter com cartão JPEG de 1200 × 630 px, favicon SVG e dados estruturados Restaurant configurados. A origem corresponde à publicação Sites existente. A hospedagem Sites permanece privada para o proprietário; robôs externos não conseguem acessar uma publicação privada. O cartão está preparado para um endereço público autorizado. Ao trocar de domínio, atualizar canonical, og:url, URLs das imagens sociais e url no JSON-LD.
 
 ## Conteúdo e fontes
 
-Endereço, telefone, Instagram e horários seguem o briefing. A presença atual do Cepa, Lucas Dante e Gabrielli Fleming foi conferida no [Guia Michelin](https://guide.michelin.com/br/pt_BR/sao-paulo-region/sao-paulo/restaurant/cepa), consultado em 6 de outubro de 2026. A página não atribui estrelas, prêmios adicionais nem apresenta pratos como permanentes.
+Endereço, telefone, Instagram e horários seguem o briefing. Cepa, Lucas Dante e Gabrielli Fleming foram conferidos no [Guia Michelin](https://guide.michelin.com/br/pt_BR/sao-paulo-region/sao-paulo/restaurant/cepa), consultado em 6 de outubro de 2026. Não foram inventados pratos permanentes, estrelas ou prêmios adicionais.
 
-O Guia consultado exibe almoço na sexta e no sábado, enquanto o briefing também informa jantar nesses dias. Foi preservado o briefing, inclusive nos dados estruturados. A equipe da casa deve validar os dois serviços antes da abertura pública definitiva.
+O Guia consultado exibe almoço na sexta e no sábado; o briefing também informa jantar nesses dias. Foi preservado o briefing, inclusive no JSON-LD. A equipe deve validar os horários antes da divulgação oficial.
 
 ## Validação
 
-Sintaxe dos dois scripts verificada com `node --check`. Prévia HTTP funcional; âncoras, menu, fechamento por Escape e navegação para informações práticas conferidos no navegador. Não houve erros de console na verificação.
+Verificados: sintaxe dos scripts, um H1, IDs únicos, âncoras, imagens, srcsets e fontes locais, JSON-LD, cartão social e ausência de travessões. Menu móvel abre e fecha por Escape; navegação por âncora conferida. Nenhum erro ou aviso de console observado.
 
-O navegador integrado manteve inicialmente a largura do painel. Para verificar a responsividade, a página foi carregada em quatro iframes de 320, 390, 768 e 1280 px, com medições do layout real de cada documento. Todos apresentaram `scrollWidth` igual à largura útil, sem transbordamento horizontal; o menu móvel apareceu nas duas larguras menores e a navegação completa nas duas maiores. Os textos dos placeholders foram ajustados para não cortar as legendas. Essas simulações verificam os breakpoints e a composição; não substituem a validação posterior em aparelhos físicos.
+Layout medido em iframes de 320, 390, 768 e 1280 px. As larguras úteis foram 305, 375, 753 e 1265 px por causa das barras de rolagem; scrollWidth coincidiu com clientWidth em todos. Cabeçalhos, parágrafos e tabela não excederam a largura útil. Imagens conferidas na prévia em computador e celular. A verificação não substitui aparelhos físicos ou uma auditoria completa de acessibilidade.
 
-Antes da divulgação definitiva: inserir fotografia e logo oficiais, confirmar horários e funcionamento do WhatsApp com a equipe, configurar domínio próprio e validar a página em dispositivos reais e com texto ampliado.
+## Acesso ao código
+
+[Repositório público no GitHub](https://github.com/gabi0102souza-stack/cepa-site). Qualquer pessoa com o link pode consultar e baixar sem login. GitHub não oferece público não listado: o repositório também pode aparecer em buscas.

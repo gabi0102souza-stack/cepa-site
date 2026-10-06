@@ -1,44 +1,29 @@
-# Autocrítica estratégica
+# Avaliação do refinamento
 
-## O que a solução resolve
+O projeto ficou mais apresentável porque passou a mostrar comida, matéria-prima, vinho e atmosfera. A abertura informa a proposta e a localização; o texto tem menos abstração e os blocos repetidos foram compactados. A base estática, a paleta, a tipografia e o caminho de reserva foram preservados.
 
-A hierarquia coloca cozinha e pessoas antes do reconhecimento. A reserva fica acessível desde o primeiro contato e retorna depois das informações práticas. O vinho tem espaço próprio e Gabrielli Fleming é nomeada no hero e no conteúdo. A página respeita a natureza sazonal do cardápio, sem preços ou pratos inventados. A execução estática mantém o custo de carregamento baixo.
+## Fotografia oficial
 
-## Fragilidades
+As imagens geradas funcionam como direção visual plausível. Não registram o restaurante real, seus pratos, arquitetura ou profissionais. A imagem do espaço é a maior limitação: mesmo identificada como ilustrativa, pode criar uma expectativa sobre materiais e disposição que não corresponde à casa. Deve ser a primeira substituição.
 
-A ausência de fotografia é a maior limitação. Os placeholders deixam o projeto completo e substituível, mas repetem grandes superfícies e prolongam a página sem entregar evidência sensorial. Depois da inserção dos assets, será preciso reavaliar recortes, sequência e distância entre seções; não basta trocar arquivos mecanicamente.
+Para atingir excelência: fotografar o ambiente real, um prato atual, Lucas em preparo e Gabrielli no serviço. Um ensaio curto com luz consistente e enquadramentos para desktop e celular acrescentaria identidade que imagens genéricas não oferecem. O lettering precisa ser validado ou substituído pela marca oficial.
 
-O lettering e a paleta são inferências. O `cepa.` funciona como proposta editorial, mas precisa ser confrontado com a marca real. Não é um logotipo oficial e não deve ser apresentado como redesenho aprovado pela casa.
+## Copy que ainda pode subir
 
-A reserva via WhatsApp reduz a complexidade, porém depende do atendimento humano e não mostra disponibilidade. O site esclarece que a confirmação vem da equipe; a velocidade de resposta continuará influenciando conversão.
+“Cozinha, vinho e hospitalidade” é clara, mas poderia pertencer a outras casas. O trecho dos pequenos produtores permanece pouco específico sem nomes, origens e relações confirmadas. Uma conversa com Lucas e Gabrielli pode fornecer dois ou três detalhes próprios, sem alongar o texto.
 
-O roteiro de nove seções segue o briefing. No celular, ele pode ser mais longo do que o necessário. Com a fotografia pronta, uma edição que aproxime casa e filosofia poderá ganhar ritmo sem perder conteúdo.
+“Será um prazer receber você” oferece calor e cumpre a função, mas não é uma assinatura marcante. A linguagem da equipe pode inspirar um convite mais pessoal. Um cardápio atual mantido pela casa tornaria a seção de mesa mais útil, se ela desejar disponibilizá-lo.
 
-## Copy que pode subir de nível
+## Risco de conceito e demonstração
 
-“A estação dita. A cozinha interpreta.” oferece uma entrada clara, mas poderia pertencer a outras cozinhas sazonais. Uma conversa curta com Lucas Dante deve revelar um detalhe específico de processo, escolha ou origem capaz de torná-la mais proprietária.
+A seleção muito coerente de madeira escura, louça artesanal e luz quente ainda parece direção de arte. Não mostra pessoas, serviço real ou detalhes exclusivos do Cepa. A identificação ilustrativa e a marca provisória tornam essa condição transparente. É uma proposta refinada até receber os materiais e a validação da casa.
 
-“O sabor de estar aqui”, “A conversa continua na taça” e “Um tempo ao ar livre” têm ritmo, porém dependem da imagem para deixar de ser abstratos. Quando houver material autorizado, substituir pelo menos um desses trechos por uma observação concreta de sala, vinho ou cozinha.
+Sites permanece privado para o proprietário, então o cartão social está preparado, mas não tem o alcance externo de um domínio público. GitHub está público e acessível sem login. Horários e canais devem ser confirmados com a equipe; a divergência de horários entre briefing e Michelin está registrada no README.
 
-“Um olhar externo sobre a cozinha que fazemos todos os dias” mantém o reconhecimento discreto, mas é dispensável. Pode ser cortado numa edição mais rigorosa.
+## Próximos 5% com maior impacto
 
-## Fotografias decisivas
-
-1. Hero: ambiente vivido ou prato contemporâneo da casa, com espaço útil para o recorte móvel.
-2. Sala e vinho: Gabrielli em serviço ou um gesto real que mostre hospitalidade, evitando catálogo de garrafas.
-3. Espaço: terraço ou balcão com escala humana e luz natural.
-4. Cozinha e ingrediente: mãos, textura e processos reais. Duas fotografias de pratos devem representar o momento do cardápio, não sugerir itens permanentes.
-
-## Oportunidades futuras
-
-Em experiências digitais de hospitalidade, pequenos detalhes próprios costumam gerar mais desejo do que efeitos. Há espaço para uma nota curta sobre o que chegou naquela semana, uma fala autorizada de Lucas ou Gabrielli e uma edição de sala que mostre pessoas e gestos. São direções criativas; não são afirmações estatísticas sobre a adoção dessas práticas no Brasil.
-
-Uma carta ou cardápio atual, acessível e datado pode resolver dúvidas antes da reserva. Só deve entrar quando houver processo confiável de atualização. Evitar PDF pesado como única opção de leitura.
-
-Se o volume justificar, reservas com disponibilidade real devem ser avaliadas junto à operação. Antes disso, uma mensagem de WhatsApp que facilite informar dia, horário e número de pessoas pode reduzir o trabalho da equipe, sem prometer confirmação automática.
-
-Com autorização da casa, observar cliques em reserva, contato e mapa ajudará a decidir quais seções manter. Escolher uma medição enxuta e compatível com privacidade, sem acrescentar rastreamento ao projeto por padrão.
-
-## Ordem de prioridade
-
-Fotografia e marca oficiais → confirmação operacional → testes em dispositivos reais → domínio próprio → edição de copy com a equipe → disponibilidade/cardápio apenas se puderem ser mantidos atualizados. Não há razão para acrescentar vídeo pesado, parallax ou uma nova biblioteca de animação.
+1. Substituir a imagem do espaço e o hero por fotografias oficiais.
+2. Aplicar wordmark e favicon da identidade aprovada.
+3. Acrescentar um detalhe concreto confirmado de Lucas e um de Gabrielli à copy.
+4. Confirmar horários e testar o processo de reserva com a equipe.
+5. Usar domínio público autorizado, conferir a prévia social em WhatsApp e redes e testar em iPhone e Android reais.

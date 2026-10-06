@@ -23,26 +23,17 @@ document.addEventListener('click', event => {
 window.matchMedia('(min-width: 761px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
+// Mantém as imagens declarativas e permite atualizar os assets cadastrados.
 document.querySelectorAll('[data-image-slot]').forEach(slot => {
   const asset = window.CEPA_ASSETS?.[slot.dataset.imageSlot];
-  if (!asset?.src || !asset.alt) return;
-  const img = new Image();
-  img.className = 'slot-image';
+  const img = slot.querySelector('img');
+  if (!img || !asset?.src || !asset.alt) return;
   img.alt = asset.alt;
   img.style.objectPosition = asset.position || '50% 50%';
-  const isHero = slot.classList.contains('hero-image');
-  img.loading = isHero ? 'eager' : 'lazy';
-  img.decoding = 'async';
-  if (isHero) img.fetchPriority = 'high';
-  img.addEventListener('load', () => {
-    slot.classList.add('has-image');
-    slot.removeAttribute('role');
-    slot.removeAttribute('aria-label');
-    img.classList.add('loaded');
-  }, { once: true });
-  img.addEventListener('error', () => img.remove(), { once: true });
-  slot.append(img);
-  img.src = asset.src;
+  if (img.getAttribute('src') !== asset.src) img.src = asset.src;
+  if (asset.srcset) img.srcset = asset.srcset;
+  else img.removeAttribute('srcset');
+  if (asset.sizes) img.sizes = asset.sizes;
 });
 // O conteúdo permanece visível sem JavaScript ou com movimento reduzido.
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
