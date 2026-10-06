@@ -302,7 +302,7 @@ h1 em,h2 em {
 }
 
 .tone-clay {
-  background:#8b6652;
+  background:#795542;
 }
 
 .tone-charcoal {
@@ -365,7 +365,7 @@ h1 em,h2 em {
 
 .slot-caption span {
   display:block;
-  opacity:.76;
+  opacity:1;
   font-size:.75rem;
 }
 
