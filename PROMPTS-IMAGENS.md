@@ -1,6 +1,6 @@
 # Imagens editoriais ilustrativas
 
-Geradas com ImageGen em 6 de outubro de 2026, uma imagem por briefing, sem variantes. Não são fotografias oficiais do Cepa nem reproduções de pratos, equipe ou arquitetura da casa. Os PNGs de origem foram convertidos em WebP responsivo; o cartão social foi exportado em JPEG de 1200 × 630 px.
+Geradas com ImageGen em 6 de outubro de 2026, uma imagem por briefing, sem variantes. Não são fotografias oficiais do Cepa nem reproduções de pratos, equipe ou arquitetura da casa. Os PNGs de origem foram convertidos em WebP responsivo. Registro histórico: a arquitetura fictícia e o antigo cartão JPEG foram retirados no refinamento final. Permanecem cinco fotos; o cartão atual é tipográfico, exportado em PNG de 1200 × 630 px, com fonte em design/og-card.html. Consulte CEPA_FINAL_REFINEMENT.md para a auditoria atual.
 
 ## hero-space-or-signature-dish
 

@@ -1,16 +1,11 @@
 # Imagens ilustrativas
 
-Seis imagens geradas com ImageGen para apresentar a direção editorial. Não são fotografias oficiais do Cepa, pratos reais, profissionais reconhecíveis ou sua arquitetura. Cada imagem tem uma versão WebP principal e outra de 640 px.
+Cinco fotos geradas são mantidas para a proposta identificada. Não documentam pratos, profissionais, cozinha ou espaço reais do Cepa. Variantes WebP principais e de 640 px, com srcset, dimensões e lazy loading.
 
-| Nome | Uso |
-|---|---|
-| hero-space-or-signature-dish | Prato genérico de legumes no hero |
-| chef-or-kitchen-detail | Preparo de legumes em frigideira |
-| ingredient-or-process-texture | Tomates e ervas |
-| dish-detail-01 | Mesa para duas pessoas |
-| wine-or-service-detail | Taças e garrafa de vinho |
-| terrace-or-counter-seating | Restaurante anônimo |
+Assets ativos: hero-space-or-signature-dish, chef-or-kitchen-detail, ingredient-or-process-texture, dish-detail-01 e wine-or-service-detail.
 
-Cartão social: `dist/og-cepa.jpg`. Prompts: `PROMPTS-IMAGENS.md`, na raiz. PNGs grandes não são carregados pelo site.
+O asset de arquitetura terrace-or-counter-seating foi removido do código e da distribuição. Não reintroduzir um interior fictício. Uma seção fotográfica do espaço depende de material real autorizado.
 
-Ao receber fotografias oficiais, atualizar HTML e cadastro em `dist/assets.js`, incluindo alt, dimensões e srcset. Priorizar o ambiente real e o hero. Manter o aviso ilustrativo enquanto algum asset gerado permanecer.
+Cartão social tipográfico em `dist/og-cepa.png`, com fonte em `design/og-card.html`. Auditoria completa em `CEPA_FINAL_REFINEMENT.md`; prompts históricos em `PROMPTS-IMAGENS.md`.
+
+Fotografias oficiais: atualizar HTML e `dist/assets.js`, incluindo descrições fiéis, dimensões e srcset. Remover o aviso ilustrativo somente depois de substituir todos os assets gerados.

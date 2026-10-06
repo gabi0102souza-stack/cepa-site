@@ -1,6 +1,6 @@
-/* Imagens editoriais ilustrativas geradas para este projeto.
+/* Imagens ilustrativas, sem fotografias oficiais do Cepa.
    O HTML contém as mesmas imagens para funcionar sem JavaScript.
-   Ao substituir por fotos oficiais, atualize este cadastro e o HTML correspondente. */
+   Atualizar cadastro e HTML juntos ao receber material oficial. */
 window.CEPA_ASSETS = {
   "hero-space-or-signature-dish": {
     "src": "images/hero-space-or-signature-dish.webp",
@@ -46,14 +46,5 @@ window.CEPA_ASSETS = {
     "position": "50% 50%",
     "width": 1122,
     "height": 1402
-  },
-  "terrace-or-counter-seating": {
-    "src": "images/terrace-or-counter-seating.webp",
-    "srcset": "images/terrace-or-counter-seating-640.webp 640w, images/terrace-or-counter-seating.webp 1600w",
-    "sizes": "92vw",
-    "alt": "Imagem ilustrativa de um restaurante com balcão de madeira e passagem para um pequeno terraço.",
-    "position": "50% 50%",
-    "width": 1600,
-    "height": 640
   }
 };

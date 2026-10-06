@@ -1274,3 +1274,18 @@ td,th {
   .table-copy p { margin-top: .75rem; }
   .image-disclosure { line-height: 1.6; }
 }
+
+/* Localização factual, sem representar uma arquitetura inexistente. */
+.location-section { display: grid; grid-template-columns: 1fr 3fr; gap: 2.5rem; }
+.location-copy h2 { font-size: clamp(2.8rem, 4.3vw, 4.9rem); }
+.location-copy p { color: var(--muted); margin-block: 1.5rem 1rem; }
+.hours-note { font-size: .75rem; color: var(--muted); margin-top: .75rem; }
+.final-link { font-size: 1rem; min-height: 44px; display: inline-flex; align-items: center; }
+.desktop-nav a { display: inline-flex; min-height: 44px; align-items: center; }
+.text-link { display: inline-flex; align-items: center; min-height: 44px; }
+.site-footer .text-link { flex-shrink: 0; }
+@media (max-width: 760px) {
+  .location-section { grid-template-columns: 1fr; gap: 2rem; }
+  .location-copy h2 { font-size: clamp(2.75rem, 8.8vw, 4rem); }
+  .site-header > .button { min-height: 44px; }
+}
