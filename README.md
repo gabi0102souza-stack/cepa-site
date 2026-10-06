@@ -60,6 +60,8 @@ O Guia consultado exibe almoço na sexta e no sábado, enquanto o briefing tamb�
 
 ## Validação
 
-Sintaxe dos dois scripts verificada com `node --check`. Prévia HTTP funcional; âncoras, menu, fechamento por Escape e navegação para informações práticas conferidos no navegador. Não houve erros de console na verificação. O navegador integrado exibiu aproximadamente 587 px de largura; a tentativa de alterar seu viewport não foi aplicada, portanto não há alegação de testes reais em 390/1280 px. Os breakpoints e o encaixe em 320 px foram revisados no CSS.
+Sintaxe dos dois scripts verificada com `node --check`. Prévia HTTP funcional; âncoras, menu, fechamento por Escape e navegação para informações práticas conferidos no navegador. Não houve erros de console na verificação.
+
+O navegador integrado manteve inicialmente a largura do painel. Para verificar a responsividade, a página foi carregada em quatro iframes de 320, 390, 768 e 1280 px, com medições do layout real de cada documento. Todos apresentaram `scrollWidth` igual à largura útil, sem transbordamento horizontal; o menu móvel apareceu nas duas larguras menores e a navegação completa nas duas maiores. Os textos dos placeholders foram ajustados para não cortar as legendas. Essas simulações verificam os breakpoints e a composição; não substituem a validação posterior em aparelhos físicos.
 
 Antes da divulgação definitiva: inserir fotografia e logo oficiais, confirmar horários e funcionamento do WhatsApp com a equipe, configurar domínio próprio e validar a página em dispositivos reais e com texto ampliado.

@@ -1075,6 +1075,9 @@ td,th {
   .ingredient-image .slot-center p {
     font-size:2rem;
   }
+  .ingredient-image .slot-center {
+    display:none;
+  }
   .section-heading>p {
     flex-shrink:1;
     max-width:230px;
@@ -1098,6 +1101,12 @@ td,th {
 }
 
 @media(max-width:760px) {
+  .image-slot {
+    padding:1.25rem;
+  }
+  .slot-center p {
+    font-size:clamp(2rem,7.5vw,3.5rem);
+  }
   .kitchen {
     grid-template-columns:1fr;
     gap:2.5rem;
@@ -1119,6 +1128,7 @@ td,th {
   .ingredient-image {
     width:44%;
     aspect-ratio:1;
+    padding:.8rem;
   }
   .ingredient-image .slot-caption span {
     display:none;
