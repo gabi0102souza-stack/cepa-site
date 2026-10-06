@@ -1,5 +1,7 @@
 # CEPA_FINAL_REFINEMENT
 
+Atualização de publicação após esta auditoria: o [site no GitHub Pages](https://gabi0102souza-stack.github.io/cepa-site/) está público, com HTTPS e acesso sem login verificado. A prévia Sites também foi liberada a pedido do usuário. As referências abaixo à hospedagem privada e à pendência de acesso descrevem o estado anterior a esses pedidos; essa pendência foi resolvida. Logo/fotos oficiais e validação dos dados operacionais continuam necessários.
+
 Auditoria e refinamento final para apresentação comercial, 6 de outubro de 2026. Esta é uma proposta de site, sem aprovação ou vínculo oficial presumido com o restaurante. O trabalho foi feito na base existente, após leitura dos arquivos, inspeção das sete imagens e navegação completa na prévia.
 
 ## 1. SUMMARY

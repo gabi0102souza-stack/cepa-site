@@ -1,5 +1,7 @@
 # Cepa | Cozinha de estação em Pinheiros
 
+[Abrir o site no GitHub Pages](https://gabi0102souza-stack.github.io/cepa-site/). Link público, sem login, para apresentar a proposta no computador ou celular.
+
 Proposta de site em português do Brasil, refinada na base existente em HTML/CSS/JS estáticos. Sem build obrigatório, backend, rastreadores ou bibliotecas de interface.
 
 O relatório completo do ciclo atual está em [CEPA_FINAL_REFINEMENT.md](CEPA_FINAL_REFINEMENT.md), com decisões, antes/depois da copy, auditoria de todas as imagens, checagem de fatos, testes, pendências e notas finais.
@@ -24,9 +26,11 @@ Ao receber material autorizado, atualizar src/srcset/sizes/alt/dimensões no `im
 
 ## Compartilhamento e dados
 
-Metadados e schema Restaurant básicos configurados. Horários mantidos na tabela do briefing, com nota de confirmação; retirados do JSON-LD por divergência conhecida. Ao trocar o domínio, atualizar canonical, og:url, URLs sociais e url do schema. A hospedagem Sites permanece privada: verificar o acesso do destinatário antes de enviar o link.
+Metadados e schema Restaurant básicos configurados. Horários mantidos na tabela do briefing, com nota de confirmação; retirados do JSON-LD por divergência conhecida. O GitHub Pages usa a branch `gh-pages`, na raiz, com HTTPS. Seus metadados apontam para o endereço público acima. A fonte continua na branch `main`, em `dist`; futuras alterações visuais devem ser exportadas novamente para `gh-pages`.
 
-[Código público no GitHub](https://github.com/gabi0102souza-stack/cepa-site). Qualquer pessoa com o link pode consultar e baixar. O acesso ao código não muda a audiência da hospedagem.
+A prévia Sites também foi liberada para acesso público a pedido do usuário. O relatório de refinamento registra o estado anterior à liberação dos links. Logo, fotos oficiais e dados operacionais ainda dependem da casa.
+
+[Código público no GitHub](https://github.com/gabi0102souza-stack/cepa-site). Qualquer pessoa com o link pode consultar e baixar. O link de apresentação é o GitHub Pages indicado no início deste arquivo.
 
 ## Validação atual
 
